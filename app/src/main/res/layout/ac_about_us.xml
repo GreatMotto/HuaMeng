@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/about_title"
+        layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/img_hm" />
+
+            <TextView
+                android:id="@+id/wv_about_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="华盟教育简介  About Huameng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         华盟教育的核心目标是让留学变得简单，培养内外兼修的国际英才。我们以扎实的学术功底，一周七天一天24小时的服务精神以及O2O学习模式（线上线下相结合），为您提供雅思／托福／SAT个性化教学、留学以及中国传统特色文化教学的一站式服务。 "
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="华盟教育四大支柱  \nOur Four PillarsQuality（质量）"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="金牌师资  行业经验丰富历练5年以上\n留学海归  雅思8分/托福100分以上"
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Service（服务）"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="金牌助教  1周7天7*24小时用心服务 \n班主任制  多人协作强化学员学习效果"
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Culture（文化）"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="辅修国学  儒墨道法琴棋书画诗酒花茶\n学贯中西  领略文化差异兼顾内外双修"
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Brand（品牌）"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="简单留学  语言+留学一站式学习平台\n线上线下  O2O式学习管理领导品牌"
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="华盟教育口号  Our Slogan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“简单留学，就来华盟！”"
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="华盟教育校训  Our School Motto"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用心努力，超越成功！\nDo harder, achieve better!"
+                android:textColor="@color/text_yasi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="华盟教育咨询热线：400-009-0127\n华盟教育官方网站：http://huamengedu.cn\n华盟教育武大校区：武汉市洪山区樱花大厦A座19层（武汉大学正门对面）\n华盟教育武广校区：武汉市江汉区武汉广场写字楼13层"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

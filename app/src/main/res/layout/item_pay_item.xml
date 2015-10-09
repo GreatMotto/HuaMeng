@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_course_img"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/banner2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/iv_course_img">
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="top"
+            android:textColor="@color/item_title_color"
+            android:text="雅思考试技巧"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_score"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/integral" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_score"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/orange"
+            android:text="15"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_score"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/item_date_color"
+            android:text="积分"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

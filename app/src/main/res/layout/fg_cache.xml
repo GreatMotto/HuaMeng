@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_has_doweload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@mipmap/cache_tab1_select"
+                android:textColor="@color/white"
+                android:text="已下载"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_doweloading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@mipmap/cache_tab2"
+                android:textColor="@color/orange"
+                android:text="正在下载"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_courses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_tab"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:id="@+id/iv_no_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/no_video"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_video"
+            android:text="暂无已下载视频"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/item_content_color"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

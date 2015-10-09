@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar" />
+
+    <TextView
+        android:id="@+id/tv_pay_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/pay_succeed"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="恭喜您，付款成功!"
+        android:textSize="15sp"
+        android:textColor="@color/item_content_color" />
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="继续购物"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/btn_click_bg" />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_second"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="查看课程"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/btn_click_bg" />
+
+</RelativeLayout>

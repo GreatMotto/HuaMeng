@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/msg_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/msg_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_tongzhi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/left_orange"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tongzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tongzhi"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/iv_tongzhi"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/yuan_white"
+                android:gravity="center"
+                android:text="@string/tongzhi_num"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pinlun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/right_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pinlun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xiaoxi"
+                android:textColor="@color/pinglunxx"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/iv_xiaoxi"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/yuan_orange"
+                android:gravity="center"
+                android:text="@string/tongzhi_num"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bm.hm.view.RefreshLayout
+            android:id="@+id/ref_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </com.bm.hm.view.RefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_no_tongzhi"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="80dp"
+                android:src="@mipmap/no_tongzhi" />
+
+            <TextView
+                android:id="@+id/tv_no_tongzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/no_tongzhi"
+                android:textColor="@color/text_details_no"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

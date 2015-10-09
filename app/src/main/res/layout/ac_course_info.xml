@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_course_img"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/img_moren"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/iv_course_img"
+            android:gravity="top"
+            android:textColor="@color/item_title_color"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/iv_course_img"
+            android:layout_below="@id/tv_course_name">
+
+            <ImageView
+                android:id="@+id/iv_score"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/integral" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_score"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@mipmap/white_wjx"
+                android:gravity="center_vertical"
+                android:textColor="@color/item_content_color"
+                android:layout_centerVertical="true"
+                android:text="收藏"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:background="@color/list_divider_color"
+                android:layout_toLeftOf="@id/tv_collect" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sellNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_course_img"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_name_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_course_img"
+            android:layout_toRightOf="@id/tv_sellNumber"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:textColor="@color/item_content_color"
+            android:text="发布者:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_teach_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_course_img"
+            android:layout_toRightOf="@id/tv_name_lbl"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:textColor="@color/item_content_color"
+            android:textSize="15sp" />
+      <LinearLayout
+          android:id="@+id/ll_level"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/iv_course_img"
+          android:layout_toRightOf="@id/tv_teach_name"
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal"
+          android:gravity="bottom"
+          android:layout_marginLeft="20dp">
+
+          </LinearLayout>
+      <!--  <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_course_img"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_teach_name"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/item_content_color"
+            android:drawableLeft="@mipmap/cen_diamond"/>-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_teach_name"
+        android:background="@color/list_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@mipmap/tab1_select"
+            android:textColor="@color/white"
+            android:text="目录"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@mipmap/tab2"
+            android:textColor="@color/orange"
+            android:text="介绍"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@mipmap/tab3"
+            android:textColor="@color/orange"
+            android:text="评价"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tech_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/item_title_color"
+        android:textSize="16sp"
+        android:text="盛婷婷Alice ——华盟教育教学总监"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tech_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:visibility="gone"
+        android:textColor="@color/item_content_color"
+        android:textSize="15sp"
+        android:text="华盟教育教学总监剑桥官方认证雅思讲师剑桥通用五级口语考官教育行业从业七年以上。主讲雅思听力、口语、词汇，托福听力。从学生实际情况出发，因材施教，秉承“能力大于分数”的理念，真正意义上帮助学生能力得到提升" />
+
+    <include
+        layout="@layout/course_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_buy"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/download_gray" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/iv_download"
+            android:layout_marginRight="10dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="立即购买" />
+
+        <ListView
+            android:id="@+id/lv_videos"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tv_buy"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+
+</LinearLayout>

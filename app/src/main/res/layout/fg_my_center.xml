@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:background="@color/lightgrey">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:background="@mipmap/me_bg"
+                android:paddingBottom="15dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="我的华盟" />
+
+                    <TextView
+                        android:id="@+id/tv_cen_band_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="15dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:text="绑定学号" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_center_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@mipmap/touxiang11"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cen_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/iv_center_pic"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cen_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_dengji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_xs"
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_cen_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_cen_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/cen_pay"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="充值"
+                    android:layout_below="@+id/ll_cen_message"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <!-- 第一排圆圈 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                       >
+
+                        <TextView
+                            android:id="@+id/tv_cen_news"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@mipmap/cen_xiaoxi"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/item_content_color"
+                            android:textSize="15sp"
+                            android:text="消息" />
+
+                        <TextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_toRightOf="@id/tv_cen_news"
+                            android:background="@drawable/red_circle"
+                            android:layout_marginLeft="-5dp"
+                            android:text="3"
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cen_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:drawableTop="@mipmap/cen_video"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/item_content_color"
+                            android:textSize="15sp"
+                            android:text="视频" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cen_tercher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:drawableTop="@mipmap/cen_tercher"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/item_content_color"
+                            android:textSize="15sp"
+                            android:text="我的老师" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 第二排圆圈 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cen_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:drawableTop="@mipmap/cen_course"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/item_content_color"
+                            android:textSize="15sp"
+                            android:text="课表" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cen_plan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:drawableTop="@mipmap/cen_plan"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/item_content_color"
+                            android:textSize="15sp"
+                            android:text="计划" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cen_timer_shaft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:drawableTop="@mipmap/cen_timer_shaft"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/item_content_color"
+                            android:textSize="15sp"
+                            android:text="时间轴" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d2d2d2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textColor="@color/item_content_color"
+                    android:textSize="15sp"
+                    android:text="设置" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_cen_clear_memory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/cen_clear_memory"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/item_content_color"
+                        android:textSize="15sp"
+                        android:text="清除缓存" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/cen_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_cen_message_back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/cen_message_back"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/item_content_color"
+                        android:textSize="15sp"
+                        android:text="意见反馈" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/cen_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_cen_about_us"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/cen_about_us"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/item_content_color"
+                        android:textSize="15sp"
+                        android:text="关于我们" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/cen_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_cen_versions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/cen_versions"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/item_content_color"
+                        android:textSize="15sp"
+                        android:text="版本更新" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/cen_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/cen_help"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/item_content_color"
+                        android:textSize="15sp"
+                        android:text="帮助" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/cen_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_cen_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/cen_contact"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/item_content_color"
+                        android:textSize="15sp"
+                        android:text="联系我们" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/cen_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d2d2d2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

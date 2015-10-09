@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#f36f20</color>
+    <color name="light">#00000000</color>
+    <color name="light_orange">#f47f38</color>
+
+    <!-- 首页圆框颜色 -->
+    <color name="lx_circle_color">#b0a3b4</color>
+    <color name="ys_circle_color">#e46b7e</color>
+    <color name="tf_circle_color">#0b3873</color>
+    <color name="sd_circle_color">#24a6de</color>
+    <color name="xtf_circle_color">#1659ac</color>
+    <color name="yy_circle_color">#88af9c</color>
+    <color name="jf_circle_color">#28a38e</color>
+
+    <!-- 列表页面字体颜色 -->
+    <color name="list_bg_color">#ededed</color>
+    <color name="list_divider_color">#c1c4d6</color>
+    <color name="item_title_color">#333333</color>
+    <color name="item_content_color">#666666</color>
+    <color name="item_date_color">#cccccc</color>
+    <color name="item_status_color">#f46a5b</color>
+
+    <!-- 添加页面标签字体颜色 -->
+    <color name="add_item_color">#595959</color>
+    <color name="btn_click_true">#FF8C69</color>
+    <color name="web_blue">#4ea3da</color>
+
+   <!--我的华盟-->
+    <color name="lightgrey">#f2f2f2</color>
+    <color name="text_black">#676767</color>
+    <color name="text_details_no">#989898</color>
+    <color name="text_time_black">#959595</color>
+    <color name="details_view">#d4d4d4</color>
+    <color name="video_view">#d2d2d2</color>
+    <color name="video_bg_gray">#f4f4f4</color>
+    <color name="tv_no_vedio">#4c4c4c</color>
+    <color name="text_yasi">#4b4b4b</color>
+    <color name="text_zhuangtai">#8a8a8a</color>
+    <color name="text_youxiang">#4d4d4d</color>
+    <color name="email_hint">#cacaca</color>
+    <color name="text_blue">#409cd7</color>
+    <color name="text_binding">#979797</color>
+    <color name="text_name">#464646</color>
+    <color name="text_kecheng">#888888</color>
+    <color name="msg_bg">#f4f4f4</color>
+    <color name="pinglunxx">#8a8a8a</color>
+    <color name="time">#868686</color>
+    <color name="kc_name">#858585</color>
+    <color name="tongzhi">#525252</color>
+    <color name="view_help">#d1d1d1</color>
+    <color name="tishi">#272727</color>
+    <color name="about_bg">#676767</color>
+    <color name="line_color">#d9d9d9</color>
+
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="solid_tab">#a7b7c5</color>
+    <!-- 下拉刷新颜色 -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <!-- 二维码 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="gray">#808080</color>
+    <color name="lightgreen">#99CC33</color>
+    <color name="green">#00CC00</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/delete_cache" />
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_delete"
+            android:layout_toLeftOf="@id/iv_status"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_content_color"
+                android:text="雅思考试技巧免费传授"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_download"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/tv_video_name"
+                android:progressDrawable="@drawable/progressbar_color"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pb_download"
+                android:textColor="@color/item_date_color"
+                android:text="未开始"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_sumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pb_download"
+                android:gravity="center_vertical"
+                android:layout_alignRight="@id/pb_download"
+                android:textColor="@color/item_date_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pb_download"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/tv_sumSize"
+                android:textColor="@color/item_date_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_downloadSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pb_download"
+                android:layout_toLeftOf="@id/tv_line"
+                android:gravity="center_vertical"
+                android:textColor="@color/item_date_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

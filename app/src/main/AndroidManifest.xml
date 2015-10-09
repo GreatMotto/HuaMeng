@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bm.hm"
+    android:versionCode="1"
+    android:installLocation="preferExternal">
+
+    <application
+        android:name="com.bm.hm.base.HMApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--启动页面和启动引导页-->
+        <activity android:name=".user.StartActivity">
+
+        </activity>
+        <!--注册获取验证码-->
+        <activity android:name=".user.RegGetCodeActivity" />
+        <activity android:name=".user.RegAgreementActivity" />
+        <!--注册-->
+        <activity android:name=".user.RegisterActivity" />
+        <!--找回密码-->
+        <activity android:name=".user.FindPasswordActivity" />
+        <activity android:name=".user.ChangPasswordActivity" />
+        <!--我要留学-->
+        <activity android:name=".abroad.AbroadMessageActivity" />
+        <activity android:name=".abroad.AbroadMessageJoin" />
+        <!--账户明细-->
+        <activity android:name=".me.AccountDetailsActivity" />
+        <!--我的视频-->
+        <activity android:name=".me.MyVideoActivity" />
+        <!--收银台-->
+        <!--登陆-->
+        <activity android:name=".user.LoginActivity">
+
+        </activity>
+        <!--个人信息-->
+        <activity
+            android:name=".me.MyCenterMessage"
+            android:theme="@style/SampleTheme.Light" />
+        <!-- 视频教程-->
+        <activity android:name=".course.CourseActivity" />
+        <!-- 课程详情-->
+        <activity android:name=".course.CourseInfoActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 登录密码修改-->
+        <activity android:name=".me.ModifyPasswordActivity" />
+        <!--昵称 -->
+        <activity android:name=".me.ModifyUsername" />
+        <!-- 性别-->
+        <activity android:name=".me.ModifySex" />
+        <!-- 邮箱-->
+        <activity android:name=".me.ModifyEmailActivity" />
+        <!-- 老师详情-->
+        <activity android:name=".course.TeacherVidoActivity" />
+        <!--充值 -->
+        <activity android:name=".pay.RechargeActivity" />
+        <!--收银台 -->
+        <activity android:name=".pay.RechargeResultActivity" />
+        <activity android:name=".pay.RechargeCardActivity" />
+        <!--绑定学号 -->
+        <activity android:name=".me.BindingNumActivity" />
+        <activity android:name=".me.BindingNumChild" />
+        <activity android:name=".type.SearchActivity" />
+        <!--积分支付 -->
+        <activity android:name=".pay.OrderActivity" />
+        <!--华盟活动 -->
+        <activity android:name=".event.EventActivity" />
+        <!--关于我们 -->
+        <activity android:name=".me.AboutUsActivity" />
+        <!--联系我们 -->
+        <activity android:name=".me.ContactUsActivity" />
+        <!-- 意见反馈-->
+        <activity android:name=".me.FeedBackActivity" />
+        <!--我的老师 -->
+        <activity android:name=".me.MyTeacherActivity" />
+        <!--通知和消息 -->
+        <activity android:name=".me.MessageActivity" />
+        <activity android:name=".me.MessageChildActivity"/>
+        <!-- 时间轴-->
+        <activity android:name=".me.TimeLineActivity" />
+        <!--我的计划 -->
+        <activity android:name=".me.MyPlanActivity" />
+        <!--帮助 -->
+        <activity android:name=".me.HelpActivity" />
+        <!-- 缓存列表-->
+        <activity android:name=".course.CacheListActivity" />
+        <!--我要留学 -->
+        <activity android:name=".abroad.QuestionActivity" />
+        <!--视频播放 -->
+        <activity android:name=".me.MyTimetableActivity" />
+        <activity
+            android:name=".course.VideoViewPlayingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".pay.PayResultActivity" />
+
+        <activity android:name=".event.EventInfoActivity" />
+
+        <activity
+            android:name=".zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 支付宝 -->
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService"></service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="554b42c767e58e74fb001338"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- sdcard中读写数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 百度播放器权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="${UMENG_CHANNEL_VALUE}" />
+</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Title -->
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/item_date_color"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/item_title_color"
+            android:text="【精选】英语日常口语，简单实用"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_download"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/list_bg_color"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bfbfbe" />
+
+        <ImageView
+            android:id="@+id/iv_selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/unselect" />
+
+        <TextView
+            android:id="@+id/tv_selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_selectAll"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="@color/item_title_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_videos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_download"
+        android:layout_below="@id/ll_top"
+        android:divider="@null">
+
+    </ListView>
+
+</RelativeLayout>

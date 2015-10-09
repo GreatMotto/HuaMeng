@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/video_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/controlbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#333333"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/media_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@mipmap/video_pause" />
+
+            <TextView
+                android:id="@+id/time_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/play_btn"
+                android:text="00:00:00"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/time_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/time_current"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/time_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/time_line"
+                android:text="00:00:00"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/light"
+                android:src="@mipmap/voice" />
+
+
+            <ImageView
+                android:id="@+id/iv_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/volume"
+                android:src="@mipmap/add_cache" />
+
+            <ImageView
+                android:id="@+id/iv_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toLeftOf="@+id/iv_cache"
+                android:src="@mipmap/light" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/iv_light"
+                android:background="@color/list_divider_color" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoviewholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/controlbar"
+        android:layout_below="@+id/titlebar">
+
+        <com.baidu.cyberplayer.core.BVideoView
+            android:id="@+id/video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+
+    <com.bm.hm.view.VerticalSeekBar
+        android:id="@+id/seekbar_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:layout_above="@+id/controlbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:visibility="invisible" />
+
+    <com.bm.hm.view.VerticalSeekBar
+        android:id="@+id/seekbar_light"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:layout_above="@+id/controlbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/seekbar_volume"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tishi"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="17dp"
+        android:textColor="@color/text_black"
+        android:gravity="center"
+       android:layout_above="@+id/controlbar"
+        android:layout_below="@+id/titlebar"
+        android:visibility="gone"/>
+</RelativeLayout>

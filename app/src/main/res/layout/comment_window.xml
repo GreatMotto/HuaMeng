@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/window_bg">
+
+    <RadioGroup
+        android:id="@+id/rg_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_good"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/radio"
+            android:layout_marginRight="5dp"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="好评"
+            android:drawableLeft="@mipmap/good"
+            android:textColor="@color/add_item_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_mid"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/radio"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="中评"
+            android:drawableLeft="@mipmap/mid"
+            android:textColor="@color/add_item_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_bad"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/radio"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="差评"
+            android:drawableLeft="@mipmap/bad"
+            android:textColor="@color/add_item_color"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="start"
+        android:maxLength="200"
+        android:textColor="@color/add_item_color"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/list_divider_color"/>
+
+    <TextView
+        android:id="@+id/tv_create_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/text_blue"
+        android:text="提交"/>
+
+</LinearLayout>

@@ -1,0 +1,535 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- Title -->
+    <include
+        android:id="@+id/title"
+        layout="@layout/home_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <!-- Banner -->
+            <include layout="@layout/banner_viewpager" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 第一排圆圈 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_lx"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle1"
+                        android:gravity="center"
+                        android:textColor="@color/lx_circle_color"
+                        android:textSize="14sp"
+                        android:text="我要\n留学" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_ys"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle2"
+                        android:gravity="center"
+                        android:textColor="@color/ys_circle_color"
+                        android:textSize="14sp"
+                        android:text="雅思\nIELTS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_tf"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle3"
+                        android:gravity="center"
+                        android:textColor="@color/tf_circle_color"
+                        android:textSize="14sp"
+                        android:text="托福\nTOEFL" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_sd"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle4"
+                        android:gravity="center"
+                        android:textColor="@color/sd_circle_color"
+                        android:textSize="14sp"
+                        android:text="赛达\nSAT" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第二排圆圈 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_xtf"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle5"
+                        android:gravity="center"
+                        android:textColor="@color/xtf_circle_color"
+                        android:textSize="13sp"
+                        android:text="小托福\nTOFEL\nJUNIOR" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_yy"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle6"
+                        android:gravity="center"
+                        android:textColor="@color/yy_circle_color"
+                        android:textSize="13sp"
+                        android:text="基础\n英语\nBASIC" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_jf"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle7"
+                        android:gravity="center"
+                        android:textColor="@color/jf_circle_color"
+                        android:textSize="14sp"
+                        android:text="积分\n充值" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hd"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/circle8"
+                        android:gravity="center"
+                        android:textColor="@color/orange"
+                        android:textSize="14sp"
+                        android:text="华盟\n活动" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 最新上架 -->
+            <RelativeLayout
+                android:id="@+id/rl_zxsj"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <ImageView
+                    android:id="@+id/iv_zxsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/zxsj" />
+
+                <TextView
+                    android:id="@+id/tv_zxsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_zxsj"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="最新上架" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_zxsj"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 销量排行 -->
+            <RelativeLayout
+                android:id="@+id/rl_xlph"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <ImageView
+                    android:id="@+id/iv_xlph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/xlph" />
+
+                <TextView
+                    android:id="@+id/tv_xlph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_xlph"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="销量排行" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_xlph"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 雅思 -->
+            <RelativeLayout
+                android:id="@+id/rl_ys"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="雅思  IELTS" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_ys"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 托福 -->
+            <RelativeLayout
+                android:id="@+id/rl_tf"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="托福  TOEFL" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_tf"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 赛达 -->
+            <RelativeLayout
+                android:id="@+id/rl_sd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="赛达  SAT" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_sd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 小托福 -->
+            <RelativeLayout
+                android:id="@+id/rl_xtf"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="小托福  TOEFL JUNIOR" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_xtf"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/list_bg_color" />
+
+            <!-- 基础英语 -->
+            <RelativeLayout
+                android:id="@+id/rl_jcyy"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="基础英语  BASIC" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more" />
+            </RelativeLayout>
+
+            <com.bm.hm.view.NoScrollGridView
+                android:id="@+id/gv_jcyy"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:layout_margin="10dp"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

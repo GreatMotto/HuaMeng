@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ImageView
+        android:id="@+id/img_binding"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/binding_suc" />
+
+    <TextView
+        android:id="@+id/tv_binding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/binding_suc"
+        android:textColor="@color/text_binding"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_binding_def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/binding_def"
+        android:textColor="@color/text_binding"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_binding_goto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_click_bg"
+        android:padding="10dp"
+        android:text="@string/binding_back"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

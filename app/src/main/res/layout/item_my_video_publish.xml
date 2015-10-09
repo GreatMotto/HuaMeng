@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_video_collent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp">
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="110dp"
+                android:layout_height="78dp"
+                android:src="@mipmap/img_moren"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_video">
+
+                <TextView
+                    android:id="@+id/tv_vedio_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_yasi"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_vedio_name"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_jifeng"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@mipmap/jifen" />
+
+                    <TextView
+                        android:id="@+id/tv_jifen_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/iv_jifeng"
+                        android:gravity="center"
+                        android:textColor="@color/orange"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/tv_jifen_num"
+                        android:gravity="center"
+                        android:text="积分"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_jifen"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_yishou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/orange"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_publish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@mipmap/vedio_huifu" />
+
+                        <TextView
+                            android:id="@+id/tv_zan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="24"
+                            android:textColor="@color/text_blue"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_xiangqing"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/img_goto_xiangqing" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/video_view"/>
+    </LinearLayout>
+</RelativeLayout>

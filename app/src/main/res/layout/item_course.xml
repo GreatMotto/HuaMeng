@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp">
+    <ImageView
+        android:id="@+id/iv_course_img"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_moren" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/iv_course_img"
+        android:gravity="top"
+        android:textColor="@color/item_title_color"
+        android:text="雅思考试技巧"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_score"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/iv_course_img"
+        android:layout_below="@id/tv_title"
+        android:src="@mipmap/integral" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv_title"
+        android:layout_toRightOf="@id/iv_score"
+        android:gravity="center_vertical"
+        android:textColor="#51a511"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_sellNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/iv_score"
+        android:layout_toRightOf="@id/iv_course_img"
+        android:gravity="bottom"
+        android:textColor="@color/orange"
+        android:text="已售:12"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/iv_score"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:textColor="@color/item_content_color"
+        android:text="胡小明"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/male"
+        android:layout_alignBottom="@id/tv_name"
+        android:layout_toLeftOf="@id/tv_name"
+        android:layout_below="@id/iv_score" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/rl_sb"
+        android:layout_width="match_parent"
+        android:background="@color/list_divider_color"
+        android:layout_height="0.5dp"/>
+</RelativeLayout>

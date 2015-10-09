@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include
+        android:id="@+id/about_title"
+        layout="@layout/titlebar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="武汉华盟教育咨询有限公司\nWuhan Huamneg Education Ltd.\n服务热线：400-009-0127\n官方网址：http://www.huamengedu.cn\n官方微信号：huamengedu\n地址：武汉市洪山区珞狮北路樱花大厦A座19层"
+        android:textSize="14sp"
+        android:textColor="@color/text_yasi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/erweima"/>
+</LinearLayout>

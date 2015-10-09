@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_course_img"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/banner2"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_course_img"
+        android:gravity="center_vertical"
+        android:textColor="@color/item_content_color"
+        android:text="雅思考试技巧"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_course_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_course_img"
+        android:gravity="center_vertical"
+        android:textColor="@color/item_date_color"
+        android:text="共缓存2节课"
+        android:textSize="15sp" />
+
+
+    <com.bm.hm.view.NoScrollListView
+        android:id="@+id/lv_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_course_img"/>
+
+
+</RelativeLayout>

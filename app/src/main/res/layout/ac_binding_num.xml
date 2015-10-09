@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/agreement_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="#3e3e3e"
+            android:text="@string/binding_num"/>
+
+            <EditText
+                android:id="@+id/et_binding_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:textColor="@color/item_content_color"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:textSize="15sp"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_vertical"
+                      android:layout_marginLeft="15dp"
+                      android:textSize="15sp"
+                      android:textColor="#3e3e3e"
+                      android:text="@string/abr_name" />
+                  <EditText
+                      android:id="@+id/et_binding_name"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:paddingTop="20dp"
+                      android:paddingBottom="20dp"
+                      android:layout_marginRight="15dp"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="10dp"
+                      android:background="#00000000"
+                      android:textColor="@color/item_content_color"
+                      android:singleLine="true"
+                      android:textSize="15sp"
+                      android:inputType="textPersonName"/>
+              </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_binding_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/binding"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/btn_click_bg" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar" />
+    <FrameLayout
+        android:id="@+id/fll" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></FrameLayout>
+
+
+    <com.bm.hm.view.PullToRefreshView
+        android:id="@+id/rfl_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_tisi"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/sc_mys"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <WebView
+                android:id="@+id/agreement_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layerType='software'
+                android:scrollbars='none' />
+        </ScrollView>
+    </com.bm.hm.view.PullToRefreshView>
+</LinearLayout>

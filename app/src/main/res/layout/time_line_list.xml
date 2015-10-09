@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_cen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Linetime"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:textColor="@color/text_time_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_time_title"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/item_content_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_lj_time"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/item_content_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/orange" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/orange_qiu" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/white_bg"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/item_content_color"
+        android:textSize="13sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="115dp"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/iv_event_pic"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/tupian"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_event_status"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingBottom="5dp"
+            android:gravity="bottom"
+            android:background="@mipmap/event_advance"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tv_event_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item_title_color"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/event_time"
+            android:singleLine="true"
+            android:drawablePadding="5dp"
+            android:layout_toLeftOf="@+id/tv_event_order"
+            android:textColor="@color/item_content_color"
+            android:textSize="12sp"
+             />
+
+        <TextView
+            android:id="@+id/tv_event_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/order"
+            android:drawablePadding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/orange"
+            android:textSize="15sp"
+            android:text="预约"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
