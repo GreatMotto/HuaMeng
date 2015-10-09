@@ -43,7 +43,7 @@ public class LoginActivity extends BaseActivity {
     private TextView tv_log_forget_password;
     private Button btn_log_login, btn_log_register;
     private int from=0;
-    private int tag = 0;
+    private int tag = 0, flag = 0;
     private Course course;
 
     @Override
